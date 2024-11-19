@@ -1,0 +1,12 @@
+observations:
+  evaluation_if_server_could_handle_load:
+    - performance_metrics:
+        - stable_memory: # la memoria se mantuvo estable con valores desde 100 peticionas hasta 40.ooo
+        - cpu_load_average: # En este caso con mas de 1000 peticiones estaba por encima del 99%, en las pruebas realizadas con 100 peticiones se mantenía en una media del 25%
+
+  specification_of_excessive_resource_usage:
+    - cpu_peak_usage:
+        - observed: true  # Indica si se observaste un pico de uso de CPU del 90% durante los primeros minutos de carga máxima (el valor seria true o false)true
+        - peak_percentage: 99
+        - request_count_at_peak:
+            - value:  # desde 1000 hasta 40000 llegaba al pico
